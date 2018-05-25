@@ -16,7 +16,7 @@
     import SwiftShims
 
     func randomUInt64() -> UInt64 {
-        return UInt64(_swift_stdlib_cxx11_mt19937()) << 32 | UInt64(_swift_stdlib_cxx11_mt19937())
+        return UInt64(_stdlib_cxx11_mt19937()) << 32 | UInt64(_stdlib_cxx11_mt19937())
     }
 #else
     func randomUInt64() -> UInt64 {
